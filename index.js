@@ -90,8 +90,8 @@ function finalScore(inningcb, inningNum) {
   let away = 0;
 
   for (let i = 0; i < inningNum; i++) {
-    home = home + inningcb();
-    away = away + inningcb();
+    home += inningcb();
+    away += inningcb();
   }
   return {
     Home: home,
